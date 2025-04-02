@@ -1,4 +1,5 @@
 📰 Fake News Detection using NLP & Deep Learning
+
 🚀 This project detects Fake News using Natural Language Processing (NLP) and Deep Learning (BiLSTM). It analyzes news articles and classifies them as Real or Fake, helping fight misinformation.
 
 📌 Features
