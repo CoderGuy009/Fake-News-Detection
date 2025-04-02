@@ -1,0 +1,7 @@
+__pycache__/
+*.csv
+*.h5
+*.keras
+*.pkl
+*.log
+.DS_Store
