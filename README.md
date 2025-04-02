@@ -1,106 +1,84 @@
-Fake News Detection
+📰 Fake News Detection using NLP & Deep Learning
+🚀 This project detects Fake News using Natural Language Processing (NLP) and Deep Learning (BiLSTM). It analyzes news articles and classifies them as Real or Fake, helping fight misinformation.
 
-Overview
+📌 Features
+✅ NLP preprocessing – Tokenization, stopword removal, and text cleaning
+✅ Bidirectional LSTM model – Captures context from both past & future words
+✅ Trained on real & fake news datasets – Ensures reliable classification
+✅ Data visualization – Uses WordCloud and Seaborn for insights
 
-This project is an AI-powered model designed to classify news articles as either real or fake. It uses Natural Language Processing (NLP) techniques combined with deep learning methods to analyze and detect misinformation in news content.
+🛠️ Technologies Used
+Python – Pandas, NumPy, Matplotlib, Seaborn
 
-Features
+TensorFlow / Keras – Deep Learning Model
 
-Uses NLP techniques like tokenization, lemmatization, and stopword removal
+NLP Libraries – NLTK, spaCy, Gensim
 
-Employs a Bidirectional LSTM model for classification
+Data Visualization – WordCloud, Seaborn, Plotly
 
-Visualizes word distributions and word clouds for real vs. fake news
+📂 Dataset
+This model is trained on two datasets:
 
-Implements TensorFlow and Keras for model training and evaluation
+True.csv – Contains real news articles
 
-Achieves high accuracy in detecting fake news
+Fake.csv – Contains fake news articles
+The dataset is preprocessed by removing stopwords, punctuation, and unnecessary text elements.
 
-Saves the trained model for future predictions
+🚀 Installation & Setup
+1️⃣ Clone this repository:
 
-Installation
+bash
+Copy
+Edit
+git clone https://github.com/CoderGuy009/Fake-News-Detection.git
+cd Fake-News-Detection
+2️⃣ Install dependencies:
 
-To run this project, you need to install the required dependencies. You can do this by running the following commands:
+bash
+Copy
+Edit
+pip install -r requirements.txt
+3️⃣ Download necessary NLTK data:
 
-pip install --upgrade tensorflow-gpu==2.18
-pip uninstall -y tensorflow
-pip install --upgrade tensorflow
-pip install plotly
-pip install nbformat
-pip install nltk
-pip install spacy
-pip install WordCloud
-pip install gensim
-pip install seaborn
-pip install scikit-learn
-
-Dataset
-
-The dataset used consists of two CSV files:
-
-True.csv: Contains real news articles
-
-Fake.csv: Contains fake news articles
-
-The dataset is preprocessed by removing stopwords and punctuation, then tokenized for input into the LSTM model.
-
-Usage
-
-1. Load the dataset
-
-import pandas as pd
-
-# Load the data
-true_df = pd.read_csv("True.csv")
-fake_df = pd.read_csv("Fake.csv")
-
-2. Preprocess the text
-
+python
+Copy
+Edit
 import nltk
-from nltk.corpus import stopwords
-nltk.download("stopwords")
+nltk.download('stopwords')
+nltk.download('punkt')
+4️⃣ Run the model training script:
 
-stop_words = stopwords.words('english')
+bash
+Copy
+Edit
+python fake_news_detection.py
+🎯 How It Works
+1️⃣ Data Preprocessing – Tokenizes and removes stopwords from text
+2️⃣ Feature Engineering – Converts text into numerical sequences
+3️⃣ Model Training – Uses a Bidirectional LSTM model for classification
+4️⃣ Prediction – Determines whether news is Fake or Real
 
-3. Train the model
+🔗 Try It on Google Colab
+Click here to open in Google Colab
 
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Embedding, LSTM, Bidirectional
+📌 Saving & Loading the Model
+To save the trained model:
 
-model = Sequential()
-model.add(Embedding(input_dim=10000, output_dim=128))
-model.add(Bidirectional(LSTM(128)))
-model.add(Dense(128, activation='relu'))
-model.add(Dense(1, activation='sigmoid'))
-model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-
-4. Evaluate the model
-
-from sklearn.metrics import accuracy_score
-accuracy = accuracy_score(y_test, predictions)
-print(f'Model Accuracy: {accuracy}')
-
-Model Saving and Deployment
-
-The trained model can be saved and used for future predictions.
-
+python
+Copy
+Edit
 model.save("fake_news_model.keras")
+To load the trained model:
 
-To reload the model:
-
+python
+Copy
+Edit
 from tensorflow.keras.models import load_model
 model = load_model("fake_news_model.keras")
+🤝 Contributing
+Feel free to fork this repo, make improvements, and submit a pull request!
 
-Google Colab Notebook
+📜 License
+This project is open-source under the MIT License.
 
-You can access the project on Google Colab using the following link:Fake News Detection - Colab Notebook
-
-Contributing
-
-Feel free to fork this repository and submit pull requests for improvements.
-
-License
-
-This project is licensed under the MIT License.
-
-
+📌 Star this repo ⭐ & contribute to fight fake news! 🚀
