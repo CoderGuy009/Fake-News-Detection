@@ -6,22 +6,31 @@ A Python project that implements a machine learning model using TensorFlow, Kera
 
 ## 🚀 Tech Stack
 
-
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) 
+
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white) 
+
 ![Pandas](https://img.shields.io/badge/Pandas-2B2B2B?style=for-the-badge&logo=pandas&logoColor=white) 
+
 ![Numpy](https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white) 
+
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-EE0000?style=for-the-badge&logo=matplotlib&logoColor=white) 
+
 ![Seaborn](https://img.shields.io/badge/Seaborn-377EB8?style=for-the-badge&logo=seaborn&logoColor=white) 
+
 ![NLTK](https://img.shields.io/badge/NLTK-399868?style=for-the-badge&logo=nltk&logoColor=white) 
+
 ![spaCy](https://img.shields.io/badge/spaCy-09A3DA?style=for-the-badge&logo=spacy&logoColor=white) 
-![Gensim](https://img.shields.io/badge/Gensim-F05033?style=for-the-badge&logo=gensim&logoColor=white) 
+
+![Gensim](https://img.shields.io/badge/Gensim-F05033?style=for-the-badge&logo=gensim&logoColor=white)
 
 
 
-## 📂 Codebase Structure
 
+## 📂 Project Structure
+```
 
 .
 ├── fake_news_detection.py   # Main script for fake news detection
@@ -32,43 +41,46 @@ A Python project that implements a machine learning model using TensorFlow, Kera
 ├── README.md                # The generated README file
 └── requirements.txt         # Project dependencies (create this if it doesn't exist)
 
-
+```
 
 
 ## ⚙️ Installation
 
 
-To install dependencies using pip (from requirements.txt):
+To install dependencies using pip:
 
-Bash
-
+```bash
 pip install -r requirements.txt
+```
 
 
 
 
-🔐 Environment Variables
-To run this project, you may need to set the following environment variables. Create a .env file in the project root and add them there:
+## 🔐 Environment Variables
 
-Ini, TOML
+To run this project, you may need to set the following environment variables. Create a `.env` file in the project root and add them there:
 
-
-
-(No specific environment variables listed for this project)
+```
 
 
-💻 Usage
+# No specific environment variables listed for this project
+
+```
+
+## 💻 Usage
+
 
 To run the main script:
 
-Bash
-
-python fake_news_detection.py
-
-
+```bash
+python main.py
+```
 
 
-🚀 Deployment
+
+
+
+## 🚀 Deployment
 
 
 This section outlines how to deploy the {{ project_name }} project.
@@ -101,17 +113,20 @@ Here is a general outline of steps you might need to consider and fill in:
 
 
 
-🤝 Contributing
+## 🤝 Contributing
+
 We welcome contributions to this project!
 
 To contribute:
 
-Fork the repository 🍴
-Create your feature branch: git checkout -b feature/YourFeature
-Commit your changes: git commit -m 'Add YourFeature'
-Push to the branch: git push origin feature/YourFeature
-Open a pull request 📬
+1. Fork the repository 🍴
+2. Create your feature branch: `git checkout -b feature/YourFeature`
+3. Commit your changes: `git commit -m 'Add YourFeature'`
+4. Push to the branch: `git push origin feature/YourFeature`
+5. Open a pull request 📬
+
 Please follow the coding guidelines and check the Makefile or CONTRIBUTING.md file if available for more details.
 
-📄 License
-This project is licensed under the MIT License. See the https://www.google.com/search?q=LICENSE file for details.
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
